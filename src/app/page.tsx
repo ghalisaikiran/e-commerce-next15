@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-   <div>Storebrand
+   <div>Welcome to Storebrand
 
     <i className="bx bx-sun"></i>
    </div>
