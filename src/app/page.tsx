@@ -1,8 +1,12 @@
-export default function Home() {
-  return (
-   <div>Welcome to Storebrand
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
-    <i className="bx bx-sun"></i>
+export default function HomePage() {
+  return (
+   <div className="min-h-screen flex flex-col">
+    Welcome to Storebrand<i className="bx bx-sun"></i>
+    <Navigation />
+    <Footer />
    </div>
   );
 }
