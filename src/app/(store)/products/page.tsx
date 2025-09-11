@@ -12,7 +12,7 @@ const Products = () => {
             {/* Categories Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {categories.map((category) => (
-                    <Link href="/products" key={category.slug} className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg hover:translate-y-[-5px] border-b-4 relative transition-all" style={{borderColor: category.color}}>
+                    <Link href={`/products/${category.slug}`} key={category.slug} className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg hover:translate-y-[-5px] border-b-4 relative transition-all" style={{borderColor: category.color}}>
                         <div className="h-48 relative overflow-hidden bg-gray-100">
                             <Image src={getCategoryImage(category.slug)} alt={category.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vm, 25vm" className="object-contain p-4 group-hover:scale-105 transition-transform-duration-300" />
                             <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white to-transparent"></div>
